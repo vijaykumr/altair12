@@ -1,0 +1,13 @@
+<project name="altair12" default="package" basedir=".">
+ <target name="compilation">
+  <mkdir dir="classes" /> 
+  <javac srcdir="src" destdir="classes" /> 
+  </target>
+ <target name="package" depends="compilation">
+  <jar basedir="classes" destfile="altair12.jar" /> 
+  </target>
+ <target name="clean">
+  <delete dir="classes" /> 
+  <delete file="altair12.jar" /> 
+  </target>
+  </project>
